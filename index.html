@@ -1,1 +1,59 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraná Agro: A Força da Nossa Terra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-bloco">
+        <h1>🌾 Paraná Agro 🚜</h1>
+        <p>Descubra a potência, as cores e a energia da nossa agricultura!</p>
+    </header>
+
+    <section class="bloco introducao">
+        <h2>A Famosa "Terra Roxa"</h2>
+        <p>O Paraná tem um dos solos mais férteis do mundo. É dessa terra vibrante que brota a comida que alimenta o Brasil e o mundo! Da soja ao café, nossa diversidade é Gigante.</p>
+    </section>
+
+    <section class="bloco interativo">
+        <h2>O que o Paraná produz? 🌽</h2>
+        <p>Clique nos botões abaixo para ver o que faz do nosso estado uma potência agrícola!</p>
+        
+        <div class="botoes-container">
+            <button onclick="mostrarCultura('soja')">🌱 Soja</button>
+            <button onclick="mostrarCultura('milho')">🌽 Milho</button>
+            <button onclick="mostrarCultura('trigo')">🌾 Trigo</button>
+            <button onclick="mostrarCultura('cafe')">☕ Café</button>
+        </div>
+
+        <div id="painel-info" class="painel-escondido">
+            <h3 id="titulo-cultura">Selecione uma cultura</h3>
+            <p id="texto-cultura">Clique em um dos botões acima para descobrir dados curiosos!</p>
+        </div>
+    </section>
+
+    <section class="bloco curiosidades">
+        <h2>Você sabia? 💡</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Cooperativismo 🤝</h3>
+                <p>O Paraná tem o maior sistema de cooperativas do Brasil. Juntos, os produtores são mais fortes!</p>
+            </div>
+            <div class="card">
+                <h3>Sustentabilidade ♻️</h3>
+                <p>Somos pioneiros no plantio direto, técnica que protege o solo e economiza água.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com 💚 orgulho paranaense | Hospedado no GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

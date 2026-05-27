@@ -1,1 +1,125 @@
+* Configurações Gerais e Cores de Personalidade */
+:root {
+    --terra-roxa: #6e2c14;
+    --verde-vivo: #2e7d32;
+    --amarelo-sol: #fbc02d;
+    --laranja-quente: #e65100;
+    --fundo-claro: #fff8e1;
+    --branco: #ffffff;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fundo-claro);
+    color: #333;
+}
+
+/* Bloco 1: Header */
+.header-bloco {
+    background: linear-gradient(135deg, var(--verde-vivo), var(--terra-roxa));
+    color: var(--branco);
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 8px solid var(--amarelo-sol);
+}
+
+.header-bloco h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px var(--terra-roxa);
+}
+
+/* Estrutura de Blocos Separados */
+.bloco {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Cores específicas de cada Bloco */
+.introducao {
+    background-color: var(--branco);
+    border-left: 10px solid var(--terra-roxa);
+}
+
+.interativo {
+    background-color: var(--amarelo-sol);
+    color: #111;
+    border-bottom: 8px solid var(--laranja-quente);
+}
+
+/* Botões Interativos */
+.botoes-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+button {
+    background-color: var(--terra-roxa);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--verde-vivo);
+}
+
+/* Painel de Resposta da Interação */
+#painel-info {
+    background-color: var(--branco);
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 3px dashed var(--laranja-quente);
+    animation: abrir 0.3s ease-out;
+}
+
+/* Bloco 4: Cartões lado a lado */
+.curiosidades {
+    background-color: var(--verde-vivo);
+    color: white;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    backdrop-filter: blur(5px);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--terra-roxa);
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Animação simples para a interação */
+@keyframes abrir {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
